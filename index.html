@@ -8,18 +8,22 @@
     <link rel="stylesheet" href="Css/index.css">
     <link rel="stylesheet" href="Css/index_Figures.css">
     <link rel="stylesheet" href="Css/Animation.css">
+    <link rel="stylesheet" href="Css/Dark_Mode.css">
     <title>Sittingn't</title>
 </head>
-<body>
+<body class="">
     
     <Header>
 
         <ul>
 
             <li><a href="#">Home</a></li>
-            <li><a href="#">Actividades</a></li>
-            <li><a href="#">Comunidad</a></li>
-            <li><a href="#">Contactar</a></li>
+            <li><a href="Html/Actividades.html">Actividades</a></li>
+            <li><a href="Html/Comunidad.html">Comunidad</a></li>
+            <li><a href="#Contactar_Down">Contactar</a></li>
+
+            <li id="Header_DarkMode"><i class="fa-solid fa-sun Header_Dark"></i></li>
+            <li id="Header_LigthMode"><i class="fa-solid fa-moon Header_Dark"></i></li>
 
         </ul>
         
@@ -136,7 +140,7 @@
 
     </section>
 
-    <footer>
+    <footer id="Contactar_Down">
 
         <h1>Sittingn't</h1>
         <nav class="Footer_Content">
@@ -169,6 +173,8 @@
         </nav>
 
     </footer>
+
+    <script src="Js/Dark_Mode.js"></script>
 
 </body>
 </html>

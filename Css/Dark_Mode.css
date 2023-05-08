@@ -1,0 +1,36 @@
+:root {
+    --Darkmode_Body: #201e1e;
+    --Darkmode_Section: #d4d4d44d;
+    --Darkmode_Background: #363333;
+}
+
+/* Index */
+
+.fa-moon, .Body_DarkMode .fa-sun {
+    display: none;
+}
+.Body_DarkMode .fa-moon {
+    display: inline;
+}
+
+.Body_DarkMode {
+    background: var(--Darkmode_Background);
+    color: var(--Ligth_Sexy_Gray);
+}
+
+.Body_DarkMode .Section_Clock {
+    border-color: var(--Darkmode_Section);
+}
+.Body_DarkMode .Section_Clock .ClockHand {
+    background: var(--Darkmode_Section);
+}
+
+.Body_DarkMode .Horizontal_Bar i {
+    color: var(--Full_Black);
+}
+
+.Body_DarkMode .Section_Health {
+    background: var(--Darkmode_Section);
+}
+
+/* Fin Index */

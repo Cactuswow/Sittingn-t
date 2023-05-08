@@ -35,7 +35,7 @@ body {
 
 header {
     width: 100%;
-    height: 500px;
+    height: 300px;
     background: var(--Shining_Green);
     color: var(--Full_White);
     display: flex;
@@ -117,88 +117,5 @@ section .Section_End_Paragraph {
 
 section .Section_Grid {
     width: 300px;
-    height: 140px;
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: repeat(6, 1fr);
-    gap: .1em;
-}
-
-section .Grid_Element {
-    border-radius: 5px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-picture {
-    display: flex;
-    gap: 50px;
-    text-align: center;
-}
-
-picture .Picture_Img img {
-    height: 100%;
-    border-radius: 50%;
-}
-
-footer {
-    width: 98%;
-    padding: 20px 100px;
-    background: var(--Full_Black);
-    color: var(--Full_White);
-    display: flex;
-    justify-content: space-between;
-    border-radius: 20px;
-    margin: 20px;
-}
-
-footer h1 {
-    font-size: 120px;
-}
-
-
-footer .Footer_Content ul{
-    list-style: none;
-}
-
-footer .Footer_Content ul li{
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-footer .Footer_Content ul li a{
-    text-decoration: none;
-    color: inherit;
-    font-size: 25px;
-}
-
-/* Animaciones */
-
-header ul .Header_Dark {
-    transition: color 0.2s;
-}
-header ul .Header_Dark:hover {
-    color: var(--Shining_Green);
-}
-
-.Grid_Element i {
-    transition: font 0.2s;
-}
-.Grid_Element:hover {
-    font-size: 25px;
-}
-
-Footer h1, .Footer_Content ul li a, a {
-    transition: color 0.4s ease;
-}
-.Footer_Content ul li a:hover, a:hover {
-    color: var(--Grid_Green);
-}
-
-Footer h1:hover {
-    color: var(--Shining_Green);
-    cursor: default;
 }
