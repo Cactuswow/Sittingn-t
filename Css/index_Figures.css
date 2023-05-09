@@ -78,7 +78,7 @@ body .Horizontal_Bar {
     position: relative;
     border-radius: 10px;
     height: 4px;
-    width: 1200px;
+    width: 100%;
     background: var(--Full_Black);
 }
 

@@ -1,6 +1,6 @@
 :root {
     --Darkmode_Body: #201e1e;
-    --Darkmode_Section: #d4d4d44d;
+    --Darkmode_Section: #6f6f6f;;
     --Darkmode_Background: #363333;
 }
 
@@ -34,3 +34,16 @@
 }
 
 /* Fin Index */
+/* Actividades */
+
+.Body_DarkMode .Section_Running_Activity{ 
+    color: var(--Full_Black);
+}
+
+.Body_DarkMode .Section_Activity {
+    background: var(--Dark_Sexy_Gray);
+}
+
+section .Section_SideBar i{
+    background: var(--Dark_Sexy_Gray);
+}

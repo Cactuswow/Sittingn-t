@@ -5,6 +5,7 @@
     --Full_White: #fff;
     --Full_Black: #000;
     --Ligth_Sexy_Gray: #ededed;
+    --Dark_Sexy_Gray: #bbb;
 
     --Grid_Red: #f00;
     --Grid_Green: #19c919;
@@ -29,7 +30,7 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: 'Oswald';
-    gap: 20px;
+    gap: 35px;
     transition: background, color 0.6s;
 }
 
@@ -86,7 +87,6 @@ header .Header_Sitting h1 {
 /* Estilos generales */
 
 section {
-    width: 1100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,5 +117,29 @@ section .Section_End_Paragraph {
 
 section .Section_Grid {
     width: 300px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+section .Section_Grid p {
+    grid-column: 1/5;
+    text-align: center;
+}
+
+.Section_Grid .Grid_Element {
+    height: 85px;
+    border-radius: 5px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Animaciones */
+
+.Grid_Element i {
+    transition: font 0.2s;
+}
+.Grid_Element:hover {
+    font-size: 28px;
 }
