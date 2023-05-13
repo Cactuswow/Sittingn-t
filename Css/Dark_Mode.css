@@ -2,9 +2,14 @@
     --Darkmode_Body: #201e1e;
     --Darkmode_Section: #6f6f6f;;
     --Darkmode_Background: #363333;
+    --Shadow: #000;
 }
 
 /* Index */
+
+.Body_DarkMode {
+    --Shadow: var(--Darkmode_Section);
+}
 
 .fa-moon, .Body_DarkMode .fa-sun {
     display: none;

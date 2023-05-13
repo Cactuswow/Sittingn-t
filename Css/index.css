@@ -23,6 +23,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scroll-padding: 45px;
 }
 
 body {
@@ -129,7 +130,7 @@ section .Section_Grid {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(6, 1fr);
-    gap: .1em;
+    gap: .15em;
 }
 
 section .Grid_Element {
@@ -150,6 +151,40 @@ picture .Picture_Img img {
     border-radius: 50%;
 }
 
+/* Acitivades */
+
+.CutSection {
+    width: 100%;
+    font-size: 30px;
+    background: var(--Shining_Green);
+    color: var(--Full_White);
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+}
+
+section .Activity_Section_Grid {
+    width: 300px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+section .Activity_Section_Grid p {
+    grid-column: 1/5;
+    text-align: center;
+}
+
+.Activity_Section_Grid .Activity_Grid_Element {
+    height: 85px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fin de actividades */
+
 footer {
     width: 98%;
     padding: 20px 100px;
@@ -163,8 +198,20 @@ footer {
 
 footer h1 {
     font-size: 120px;
+    position: relative;
+    letter-spacing: 5px;
+    cursor: default;
 }
 
+footer h1::before{
+    content: "Sittingn't";
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: var(--Shining_Green);
+    width: 0;
+}
 
 footer .Footer_Content ul{
     list-style: none;
@@ -185,18 +232,15 @@ footer .Footer_Content ul li a{
 
 /* Animaciones */
 
+header .Header_Sitting a:hover {
+    box-shadow: 5px 5px 20px -10px var(--Full_Black);
+}
+
 header ul .Header_Dark {
     transition: color 0.2s;
 }
 header ul .Header_Dark:hover {
     color: var(--Shining_Green);
-}
-
-.Grid_Element i {
-    transition: font 0.2s;
-}
-.Grid_Element:hover {
-    font-size: 25px;
 }
 
 Footer h1, .Footer_Content ul li a, a {
@@ -206,7 +250,6 @@ Footer h1, .Footer_Content ul li a, a {
     color: var(--Grid_Green);
 }
 
-Footer h1:hover {
-    color: var(--Shining_Green);
-    cursor: default;
+footer h1:hover:before{
+    animation: Filler_Sitting 0.5s linear both;
 }

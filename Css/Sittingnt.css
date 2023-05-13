@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+
+:root {
+    --Shining_Green: #00bb2d;
+    --Full_White: #fff;
+    --Full_Black: #000;
+    --Ligth_Sexy_Gray: #ededed;
+    --Dark_Sexy_Gray: #bbb;
+
+    --Grid_Red: #f00;
+    --Grid_Green: #19c919;
+    --Grid_Dark_Blue: #4040fb;
+    --Grid_Ligth_Blue: #5ab2da;
+    --Grid_Orange: #ffa333;
+    --Grid_Purple: #8a2be2;
+    --Grid_Yellow: #f7d547;
+    --grid_Pink: #ed58a4;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Oswald';
+    gap: 20px;
+    transition: background, color 0.6s;
+}
+
+header {
+    width: 900px;
+    background: var(--Ligth_Sexy_Gray);
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+header .Header_Profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 2.5px 10px var(--Full_White), 0 0 10px 20px var(--Dark_Sexy_Gray);
+}
+header .Header_Profile img{
+    width: 100%;
+}
+
+header .Header_NickName {
+    font-size: 35px;
+}
+
+
