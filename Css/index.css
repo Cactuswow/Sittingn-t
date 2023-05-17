@@ -4,8 +4,8 @@
     --Shining_Green: #00bb2d;
     --Full_White: #fff;
     --Full_Black: #000;
-    --Ligth_Sexy_Gray: #ededed;
-    --Dark_Sexy_Gray: #bbb;
+    --Ligth_Gray: #ededed;
+    --Dark_Gray: #bbb;
 
     --Grid_Red: #f00;
     --Grid_Green: #19c919;
@@ -142,7 +142,7 @@ section .Grid_Element {
 
 picture {
     display: flex;
-    gap: 50px;
+    gap: 80px;
     text-align: center;
 }
 

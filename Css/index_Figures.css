@@ -64,7 +64,7 @@ section .Section_Clock .ClockHand {
 section .Section_Health {
     width: 300px;
     height: 300px;
-    background: var(--Ligth_Sexy_Gray);
+    background: var(--Ligth_Gray);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -84,7 +84,7 @@ body .Horizontal_Bar {
 
 body .Horizontal_Bar i {
     position: absolute;
-    background: var(--Ligth_Sexy_Gray);
+    background: var(--Ligth_Gray);
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -102,7 +102,7 @@ picture .Picture_Img {
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 20px;
-    box-shadow: 0 0 2.5px 10px var(--Full_White), 0 0 10px 20px var(--Dark_Sexy_Gray);
+    box-shadow: 0 0 2.5px 10px var(--Full_White), 0 0 10px 20px var(--Shadow);
 }
 
 /* Actividades */
@@ -155,7 +155,7 @@ section .Section_Activity {
     border-radius: 15px;
     font-size: 100px;
     transform: rotate(45deg);
-    background: var(--Ligth_Sexy_Gray);
+    background: var(--Ligth_Gray);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,7 +181,7 @@ section .Section_SideBar i {
     position: absolute;
     bottom: 0;
     padding: 5px;
-    background: var(--Ligth_Sexy_Gray);
+    background: var(--Ligth_Gray);
     border-radius: 50%;
     border: 2px solid var(--Full_Black);
     font-size: 25px;

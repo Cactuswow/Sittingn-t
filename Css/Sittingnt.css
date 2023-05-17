@@ -4,8 +4,8 @@
     --Shining_Green: #00bb2d;
     --Full_White: #fff;
     --Full_Black: #000;
-    --Ligth_Sexy_Gray: #ededed;
-    --Dark_Sexy_Gray: #bbb;
+    --Ligth_Gray: #ededed;
+    --Dark_Gray: #bbb;
 
     --Grid_Red: #f00;
     --Grid_Green: #19c919;
@@ -15,7 +15,6 @@
     --Grid_Purple: #8a2be2;
     --Grid_Yellow: #f7d547;
     --grid_Pink: #ed58a4;
-    
 }
 
 * {
@@ -35,30 +34,95 @@ body {
 }
 
 header {
-    width: 900px;
-    background: var(--Ligth_Sexy_Gray);
+    width: 95%;
+    max-width: 900px;
+    background: var(--Ligth_Gray);
+    color: var(--Full_Black);
     margin-top: 20px;
-    padding: 20px;
+    padding: 20px 0;
+    font-size: 20px;
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(11, 1fr);
+    position: sticky;
+    top: 20px;
+}
+
+header a {
+    color: inherit;
+    width: 50px;
+    height: 50px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+header a:hover {
+    background: var(--Shadow);
+}
+
+picture {
+    width: 95%;
+    max-width: 900px;
+    display: flex;
+}
+
+/* Fin de estilos generales */
+
+
+/* Slider 1 */
+
+#Slider_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.Slider1_Grid {
+    width: 600px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4 , 1fr);
+}
+
+/* nav {
+    max-width: 900px;
+    width: 95%;
+    height: 200px;
+    background: var(--Ligth_Gray);
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
     overflow: hidden;
     border-radius: 10px;
+    text-align: center;
 }
 
-header .Header_Profile {
+nav .Header_Profile {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 0 2.5px 10px var(--Full_White), 0 0 10px 20px var(--Dark_Sexy_Gray);
+    box-shadow: 0 0 2.5px 10px var(--Full_White), 0 0 10px 20px var(--Dark_Gray);
+    
 }
-header .Header_Profile img{
+nav .Header_Profile img{
     width: 100%;
 }
 
-header .Header_NickName {
+nav .Header_NickName {
     font-size: 35px;
 }
 
-
+nav .Header_Data p {
+    color: var(--Dark_Gray);
+} */

@@ -2,13 +2,13 @@
     --Darkmode_Body: #201e1e;
     --Darkmode_Section: #6f6f6f;;
     --Darkmode_Background: #363333;
-    --Shadow: #000;
+    --Shadow: var(--Dark_Gray);
 }
 
 /* Index */
 
 .Body_DarkMode {
-    --Shadow: var(--Darkmode_Section);
+    --Shadow: var(--Darkmode_Body);
 }
 
 .fa-moon, .Body_DarkMode .fa-sun {
@@ -20,7 +20,7 @@
 
 .Body_DarkMode {
     background: var(--Darkmode_Background);
-    color: var(--Ligth_Sexy_Gray);
+    color: var(--Ligth_Gray);
 }
 
 .Body_DarkMode .Section_Clock {
@@ -46,9 +46,9 @@
 }
 
 .Body_DarkMode .Section_Activity {
-    background: var(--Dark_Sexy_Gray);
+    background: var(--Dark_Gray);
 }
 
 section .Section_SideBar i{
-    background: var(--Dark_Sexy_Gray);
+    background: var(--Dark_Gray);
 }
