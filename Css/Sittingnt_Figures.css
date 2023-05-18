@@ -42,6 +42,15 @@
     font-size: 15px;
 }
 
+.Slider1_Grid_Element h6 {
+    position: absolute;
+    letter-spacing: .1em;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+}
+
 .Slider1_Grid #Slider1_Element1{
     background: var(--Grid_Red);
 }
@@ -53,6 +62,11 @@
 }
 .Slider1_Grid #Slider1_Element4{
     background: var(--Grid_Purple);
+}
+.Slider1_Grid #Slider1_Element5{
+    font-size: 45px;
+    background: var(--Darkmode_Section);
+    box-shadow: 0 0 5px 5px var(--Shadow);
 }
 
 /* Animaciones Slider1 */
