@@ -1,0 +1,17 @@
+:root {
+    --Darkmode_Body: #201e1e;
+    --Darkmode_Section: #6f6f6f;;
+    --Darkmode_Background: #363333;
+    --Shadow: var(--Dark_Gray);
+}
+
+.Body_DarkMode {
+    --Shadow: var(--Darkmode_Body);
+    background: var(--Darkmode_Background);
+}
+
+/* Slider 4 */
+
+.Body_DarkMode #Slider_4 .DarkmodeSelector{
+    transform: translateX(0);
+}

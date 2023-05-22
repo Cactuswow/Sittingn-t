@@ -80,6 +80,7 @@ body .Horizontal_Bar {
     height: 4px;
     width: 100%;
     background: var(--Full_Black);
+    margin: 20px 0;
 }
 
 body .Horizontal_Bar i {
@@ -164,8 +165,6 @@ section .Section_Activity {
 section .Section_Activity i {
     transform: rotate(-45deg);
     color: var(--Grid_Green);
-    animation: Activity_Rotate 0.4s;
-    animation-iteration-count: 1;
 }
 
 section .Section_SideBar {

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../Css/Sittingnt.css">
     <link rel="stylesheet" href="../Css/Sittingnt_Figures.css">
     <link rel="stylesheet" href="../Css/Animation.css">
-    <link rel="stylesheet" href="../Css/Dark_Mode.css">
+    <link rel="stylesheet" href="../Css/DarkMode_Sittingnt.css">
     <title>Sittingn't</title>
 </head>
 <body>
@@ -21,15 +21,15 @@
         <div class="Grid_VerticalBar"></div>
         <a class="Header_Items3" href="#Slider_3"><i class="fa-solid fa-diamond"></i></a>
         <div class="Grid_VerticalBar"></div>
-        <a class="Header_Items4" href="#"><i class="fa-solid fa-gear"></i></a>
+        <a class="Header_Items4" href="#Slider_4"><i class="fa-solid fa-gear"></i></a>
 
     </header>
 
     <picture>
 
-        <div id="Slider_1">
+        <div id="Slider_1" class="Picture_Sliders">
 
-            <div class="Slider1_Activity"></div>
+            <div id="Slider1_Activity"></div>
 
             <div class="Slider1_Grid">
 
@@ -39,6 +39,13 @@
                     <span><i class="fa-solid fa-heart"></i></span>
                     <h6>0.5 h</h6>
 
+                    <span class="Slider1_Description">
+
+                        <h1>Titulo 1</h1>
+                        <h2>Descripción 1</h2>
+
+                    </span>
+
                 </span>
 
                 <span  id="Slider1_Element2" class="Slider1_Grid_Element">
@@ -46,6 +53,13 @@
                     <p>02</p>
                     <span><i class="fa-solid fa-circle-check"></i></span>
                     <h6>2.5 h</h6>
+
+                    <span class="Slider1_Description">
+
+                        <h1>Titulo 1</h1>
+                        <h2>Descripción 1</h2>
+
+                    </span>
 
                 </span>
 
@@ -55,6 +69,13 @@
                     <span><i class="fa-solid fa-mug-saucer"></i></span>
                     <h6>0.2 h</h6>
 
+                    <span class="Slider1_Description">
+
+                        <h1>Titulo 1</h1>
+                        <h2>Descripción 1 Lorem ipsum dolor sit.</h2>
+
+                    </span>
+
                 </span>
 
                 <span  id="Slider1_Element4" class="Slider1_Grid_Element">
@@ -62,6 +83,13 @@
                     <p>04</p>
                     <span><i class="fa-solid fa-gamepad"></i></span>
                     <h6>1.2 h</h6>
+
+                    <span class="Slider1_Description">
+
+                        <h1>Titulo 1</h1>
+                        <h2>Descripción 1</h2>
+
+                    </span>
 
                 </span>
 
@@ -73,41 +101,97 @@
 
             </div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus esse commodi cum accusamus iure error quaerat unde architecto velit officiis minima voluptatum temporibus odit corporis quibusdam tempora consequatur, tenetur molestias.
-            Ex possimus ab vitae tenetur corporis! Quasi mollitia provident, libero ad autem ullam neque voluptatem velriam! Quasi, dolorum!</p>
+            <div id="Slider1_CardInformation">
+
+                <div class="Card_Name">
+
+                    <input type="text" value="Nombre">
+                    <i class="fa-solid fa-fire"></i>
+
+                </div>
+
+                <div class="Card_Description">
+
+                    <h4>Descripción: </h4>
+                    <textarea maxlength="130" autocapitalize="none"></textarea>
+
+                </div>
+
+                <div class="Card_Details">
+
+                    <div class="Card_Details_Time">
+
+                        <p class="Card_TimerAlert">Alerta</p>
+                        <input type="range" min="0" max="150" id="CardTimer">
+
+                    </div>
+
+                    <span class="Card_Color"><input class="Input_Color" type="color"></span>
+
+                </div>
+
+            </div>
 
         </div>
 
-        <div id="Slider_3">
+        <div id="Slider_2" class="Picture_Sliders">
 
-            <nav>
+            <div class="Slider2_Graphic"></div>
+            <div class="Slider2_History"></div>
 
-                <div class="Header_NickName">
-                    <h2>Kactuswow</h2>
-                </div>
-                <picture class="Header_Profile"><img src="https://i1.sndcdn.com/avatars-xqxbrcGokMOxLOv3-BYySpw-t500x500.jpg" alt=""></picture>
-                <div class="Header_Content">
-        
-                    <div class="Header_Data">
-        
-                        <h2>Actividades</h2>
-                        <p>14</p>
-        
+        </div>
+
+        <div id="Slider_3" class="Picture_Sliders">
+        </div>
+
+        <div id="Slider_4" class="Picture_Sliders">
+
+            <ul class="Config_List">
+
+                <h1>Configuración</h1>
+
+                <li>
+                    <p>Cuenta</p>
+                    <i class="fa-solid fa-star"></i>
+                </li>
+
+                <li>
+    
+                    <p>Tema</p>
+                    <div id="Config_Darkmode">
+
+                        <span class="DarkmodeCircle Darkmode_Sharps"></span>
+                        <span class="DarkmodeSquare Darkmode_Sharps"></span>
+                        <span class="DarkmodeSelector"></span>
+
                     </div>
-                    <div class="Header_Data">
-        
-                        <h2>Guardados</h2>
-                        <p>9</p>
-        
-                    </div>
-        
-                </div>
-        
-            </nav>
+                </li>
+
+                <li>
+                    <p>Notificaciones</p>
+                    <i class="fa-solid fa-bell"></i>
+                </li>
+
+                <li>
+                    Accesibilidad
+                    <i class="fa-solid fa-link"></i>
+                </li>
+
+                <li>
+                    <h3>Version</h3>
+                    <p>1.0</p>
+                </li>
+                
+
+            </ul>
 
         </div>
 
     </picture>
+
+    <script src="../Js/JQuery.js"></script>
+    <script src="../Js/DarkMode_Sittingnt.js"></script>
+    <script src="../Js/Sittingnt.js"></script>
 
 </body>
 </html>

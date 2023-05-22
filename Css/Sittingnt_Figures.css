@@ -20,7 +20,7 @@
 
 /* Slider 1 */
 
-.Slider1_Grid_Element {
+#Slider_1 .Slider1_Grid_Element {
     width: 100px;
     height: 130px;
     border-radius: 10px;
@@ -33,6 +33,10 @@
     transition: transform 0.2s;
     cursor: pointer;
     box-shadow: 0 0 15px 5px var(--Shadow);
+}
+
+.Slider1_Description {
+    display: none;
 }
 
 .Slider1_Grid_Element p {
@@ -67,6 +71,97 @@
     font-size: 45px;
     background: var(--Darkmode_Section);
     box-shadow: 0 0 5px 5px var(--Shadow);
+}
+
+.Activity_Running {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--Full_Black);
+    border-radius: 10px;
+    width: 700px;
+    padding: 10px;
+    font-size: 20px;
+    margin: 20px 0;
+    gap: 50px;
+    position: relative;
+    animation: Expand_Activity 0.8s;
+}
+
+.ActivitySquare {
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--Full_Black);
+    border-radius: 15px;
+    font-size: 80px;
+    transform: rotate(45deg);
+    background: var(--Ligth_Gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: Rotate_Activity_Square 1s;
+}
+
+.ActivitySquare i {
+    transform: rotate(-45deg);
+    animation: Rotate_Activity_Icon 1s;
+}
+
+.Slider1_SideBar {
+    transform: rotate(180deg);
+    height: 150px;
+    writing-mode: vertical-lr;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 5px;
+}
+
+.Slider1_SideBar i {
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    background: var(--Ligth_Gray);
+    border-radius: 50%;
+    border: 2px solid var(--Full_Black);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Slider 4 */
+
+#Slider_4 #Config_Darkmode{
+    display: flex;
+    position: relative;
+}
+
+.Darkmode_Sharps {
+    height: 25px;
+    width: 25px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.DarkmodeCircle {
+    position: absolute;
+    transform: translateX(-80px);
+    border-radius: 50%;
+    background: var(--Grid_Orange);
+}
+
+.DarkmodeSquare {
+    border-radius: 5px;
+    background: var(--Grid_Purple);
+}
+
+.DarkmodeSelector{
+    position: absolute;
+    transform: translateX(-80px);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px var(--Dark_Gray);
+    background: var(--Dark_Gray);
+    transition: transform 0.2s;
 }
 
 /* Animaciones Slider1 */

@@ -47,3 +47,41 @@
         width: 100%;
     }
 }
+
+/* Slider 1 */
+
+@keyframes Expand_Activity {
+    0% {
+        height: 0;
+        overflow: hidden;
+    }
+    100% {
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+@keyframes Rotate_Activity_Square {
+    0%, 70% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes Rotate_Activity_Icon{
+    0%, 70% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
+    
+}
