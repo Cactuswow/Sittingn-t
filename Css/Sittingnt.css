@@ -357,6 +357,7 @@ picture .Picture_Sliders {
     outline: 1px solid black;
     border-radius: 5px;
     padding: 5px;
+    font-family: inherit;
     color: darkslategrey;
 }
 /* Fin de Slider 3 */
@@ -391,7 +392,9 @@ picture .Picture_Sliders {
     gap: 30px;
     background: var(--Ligth_Gray);
     border-radius: 10px;
-    padding: 10px 0;
+    padding: 10px 0 40px 0;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
 }
 
 .Form_Hero {
@@ -406,17 +409,75 @@ picture .Picture_Sliders {
 
 .Form_InputContent {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.Form_InputContent input {
+.Form_InputContent input, .Form_Inputs input {
     font-size: 25px;
     font-family: inherit;
     border: none;
     padding: 10px 0px 10px 40px;
     border-radius: 10px;
+    background: var(--Full_White);
+    outline: none;
 }
 
 .Form_InputContent img {
     position: absolute;
-    width: 35px;
+    left: 5px;
+    width: 25px;
+}
+
+.Img_KeyForm {
+    transform: rotate(-35deg);
+}
+
+#Input_Submit {
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.Form_Extras_LogIn {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Form_Extras_LogIn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Extras_SignUp {
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px -12px var(--Full_Black);
+    background: var(--Full_White);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Extras_SignUp:hover {
+    cursor: pointer;
+}
+
+.Extras_SingUp {
+    display: flex;
+    gap: 60px;
+    font-size: 45px;
+}
+
+.Extras_SingUp i {
+    padding: 10px;
+    border-radius: 50%;
+    background: var(--Full_White);
+    transition: box-shadow 0.3s;
+}
+
+.Extras_SingUp i:hover {
+    box-shadow: 0 0 10px 5px var(--Shadow);
 }
