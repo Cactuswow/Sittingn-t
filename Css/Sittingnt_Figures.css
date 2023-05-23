@@ -103,7 +103,7 @@
 
 .ActivitySquare i {
     transform: rotate(-45deg);
-    animation: Rotate_Activity_Icon 1s;
+    animation: Beat_Activity_Icon infinite alternate 0.3s 1s;
 }
 
 .Slider1_SideBar {
@@ -125,6 +125,147 @@
     border: 2px solid var(--Full_Black);
     font-size: 25px;
     cursor: pointer;
+}
+
+/* Slider 2 */
+
+.Slider2_Graphic {
+    width: 700px;
+    height: 500px;
+    padding: 150px 20px 5px 20px;
+    border-bottom: 5px solid var(--Full_Black);
+    display: grid;
+    align-items: end;
+    justify-items: center;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 55px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Graphic_Bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border-radius: 10px;
+    background: #fff;
+    position: relative;
+}
+
+.Bar_Activity_Timer {
+    position: absolute;
+    font-size: 25px;
+    top: -35px;
+    color: var(--Dark_Gray);
+    transition: transform 0.3s;
+    transform: scale(0);
+}
+
+.Graphic_Basket {
+    width: 5px;
+    height: 50px;
+    border-radius: 20px;
+    position: absolute;
+    background: var(--Full_Black);
+    bottom: -10px;
+}
+.Basket_Left {
+    left: 0;
+}
+.Basket_Right {
+    right: 0;
+}
+
+.Bar_Activity_01 {
+    height: 50%;
+    background: var(--Grid_Red);
+}
+.Bar_Activity_02 {
+    height: 100%;
+    background: var(--Grid_Green);
+}
+.Bar_Activity_03 {
+    height: 35%;
+    background: var(--Grid_Orange);
+}
+.Bar_Activity_04 {
+    height: 80%;
+    background: var(--Grid_Purple);
+}
+
+.NoTracking {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--Ligth_Gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 7px 5px var(--Shadow);
+    z-index: 10;
+}
+
+.NoTrackingtime {
+    font-size: 45px;
+    width: 120px;
+    height: 80px;
+    border: 2px solid var(--Dark_Gray);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    transform: translateY(10px);
+    transition: transform 0.5s, width 0.5s, color 0.5s;
+    color: transparent;
+}
+
+.Slider2_History {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.History_Activity {
+    width: 100%;
+    border-radius: 10px;
+    padding: 0px 30px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+    box-shadow: 5px 4px 10px var(--Shadow);
+}
+
+.History_Activity i {
+    font-size: 55px;
+}
+
+.History_Activity .Activity_LocalTime {
+    text-align: center;
+}
+
+.History_Activity_01 {
+    background: var(--Grid_Red);
+}
+.History_Activity_02 {
+    background: var(--Grid_Green);
+}
+.History_Activity_03 {
+    background: var(--Grid_Orange);
+}
+.History_Activity_04 {
+    background: var(--Grid_Purple);
 }
 
 /* Slider 4 */
@@ -164,8 +305,25 @@
     transition: transform 0.2s;
 }
 
-/* Animaciones Slider1 */
+/* Animaciones Slider 1 */
 
 .Slider1_Grid_Element:hover {
     transform: translateY(-20px);
+}
+
+/* Animaciones Slider 2 */
+
+.Graphic_Bar:hover .Bar_Activity_Timer {
+    transform: scale(1);
+}
+
+.NoTracking:hover + .NoTrackingtime {
+    width: 170px;
+    transform: translate(47px,10px);
+    color: inherit;
+    box-shadow: 0 0 7px 5px var(--Shadow);
+}
+
+.History_Activity:hover {
+    transform: translateY(-10px);
 }

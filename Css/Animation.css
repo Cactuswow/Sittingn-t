@@ -73,15 +73,11 @@
     }
 }
 
-@keyframes Rotate_Activity_Icon{
-    0%, 70% {
-        transform: rotate(0deg);
-    }
-    80% {
-        transform: rotate(-30deg);
+@keyframes Beat_Activity_Icon {
+    0% {
+        transform: rotate(-45deg) scale(1);
     }
     100% {
-        transform: rotate(-45deg);
+        transform: rotate(-45deg) scale(1.1);
     }
-    
 }

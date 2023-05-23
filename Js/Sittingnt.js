@@ -96,8 +96,6 @@ function Slider1_TimeRun(i, Slider1_Timep) {
     TimeCard[i]++;
 }
 
-
-
 for(let i = 0; i < Card.length - 1; i++) {
 
     Card[i].oncontextmenu = function(event) {
@@ -140,3 +138,4 @@ Slider1_ColorInput.onchange = function() {
     $(CardInformation).css('background', BackgroundColor_Input);
     console.log(BackgroundColor_Input)
 }
+

@@ -10,6 +10,21 @@
     background: var(--Darkmode_Background);
 }
 
+
+/* Slider 2 */
+
+.Body_DarkMode #Slider_2 {
+    color: var(--Full_White);
+}
+
+.Body_DarkMode #Slider_2 .NoTracking {
+    color: var(--Full_Black);
+}
+
+.Body_DarkMode #Slider_2 .NoTracking {
+    color: var(--Full_Black);
+}
+
 /* Slider 4 */
 
 .Body_DarkMode #Slider_4 .DarkmodeSelector{

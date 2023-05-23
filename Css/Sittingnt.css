@@ -186,8 +186,6 @@ picture .Picture_Sliders {
 
 /* Slider 2 */
 
-
-
 /* Fin de Slider 2 */
 
 /* Slider 3 */
@@ -214,4 +212,42 @@ picture .Picture_Sliders {
 
 .fa-link {
     transform: rotate(45deg);
+}
+
+#Slider_4 form {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background: var(--Ligth_Gray);
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.Form_Hero {
+    text-align: center;
+}
+
+.Form_Inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Form_InputContent {
+    position: relative;
+}
+
+.Form_InputContent input {
+    font-size: 25px;
+    font-family: inherit;
+    border: none;
+    padding: 10px 0px 10px 40px;
+    border-radius: 10px;
+}
+
+.Form_InputContent img {
+    position: absolute;
+    width: 35px;
 }
