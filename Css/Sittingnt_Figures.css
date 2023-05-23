@@ -268,6 +268,34 @@
     background: var(--Grid_Purple);
 }
 
+/* Slider 3 */
+.Target_3 .Content_Stars input{
+    display: none;
+}
+.Content_Stars label{
+    color: #444;
+    font-size: large;
+    padding: 2px;
+    float: right;
+    transition: all 0.2s ease;
+}
+.Content_Stars input:not(:checked) ~ label:hover,
+.Content_Stars input:not(:checked) ~ label:hover ~ label{
+    color: #ffff20;
+    text-shadow: 0 0 2px #000;
+}
+.Content_Stars input:checked ~ label{
+    color:#ffff20;
+    text-shadow: 0 0 2px #000;
+}
+#rate-5:checked ~ label{
+    color: #fe2;
+    text-shadow: 0 0 4px #000;
+}
+.Content_Stars input:checked ~ form{ 
+    display: block;
+}
+
 /* Slider 4 */
 
 #Slider_4 #Config_Darkmode{

@@ -190,6 +190,175 @@ picture .Picture_Sliders {
 
 /* Slider 3 */
 
+.Content{
+    width: 800px;
+    background-color: var(--Ligth_Gray);
+    height: 100vh;
+    /* outline: 2px #ededed; */
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0 0 7px black;
+}
+.Content_Header {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    background-color: #19c919;
+}
+.Content_Header input{
+    width: 40%;
+    height: 60%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 8px;
+    background-color: var(--Full_White);
+    
+}
+.Content_Header div{
+    display: flex;
+    background-color: var(--Ligth_Gray);
+    padding: 8px;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+}
+.Content_Header i{
+    font-size: x-large;
+}
+.Content_Main{
+    display: flex;
+}
+.Content_Menu{
+    width: 25%;
+    height: 100vh;
+    border-right: 2px solid darkslategrey;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
+    padding-top: 20px;
+}
+.Content_Menu span{
+    background-color: var(--Full_White);
+    border-radius: .5em;
+    font-size: large;
+    color: darkslategrey;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 1px;
+    padding: 0 10px;
+    height: 35px;
+    transition: .3s;
+}
+.Content_Menu span:hover{
+    /* background-color: var(--Ligth_Gray); */
+    box-shadow: 0 0 5px black;
+    color: var(--Full_Black);
+    transition: .3s;
+}
+.Content_Target{
+    width: 60%;
+    height: 400px;
+    background-color: var(--Full_White);
+    margin: 0 auto;
+    margin-top: 10px;
+    outline: 2px solid darkslategrey;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Target_1{
+    display: flex;
+    /* background-color: #19c919; */
+    height: 12%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.Target_1-a{
+    display: flex;
+    gap: 5px;
+    /* background-color: #f7d547; */
+    width: 40%;
+    /* height: 100%; */
+    align-items: center;
+}
+.Target_Perfil{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--Ligth_Gray);
+    height: 40px;
+    width: 40px;
+    color: var(--Full_Black);
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+    font-size: large;
+    outline: 1px solid black;
+}
+
+.Target_1-a+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 25%;
+    border-radius: 5px;
+    font-size: large;
+    color: var(--Full_White);
+    background-color: var(--Grid_Red);
+}
+.Target_Icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    background-color: var(--Ligth_Gray);
+    color: var(--Grid_Red);
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.Target_Icon i{
+    transform: rotate(-45deg);
+}
+.Target_2{
+    height: 70%;
+    background-color: #fff;
+    background-image: url('https://images.ctfassets.net/ipjoepkmtnha/687anB2sdEnlVt1ZgQdM8g/b51a3082dedf2f1afbf048f73b789b76/technogym-myrune-home-img.jpg');
+    background-size: cover;
+    background-position: top;
+}
+.Target_3{
+    height: 12%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.Comment{
+    width: 30%;
+    /* overflow: hidden; */
+}
+.Comment textarea{
+    outline: none;
+    border: 1px solid transparent;
+    background-color: var(--Ligth_Gray);
+    outline: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    color: darkslategrey;
+}
 /* Fin de Slider 3 */
 
 /* Slider 4 */
