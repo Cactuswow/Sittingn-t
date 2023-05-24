@@ -296,6 +296,35 @@
     display: block;
 }
 
+.Target_2 .Activity_Grid_Element1{
+    background: var(--Grid_Red);
+}
+.Target_2 .Activity_Grid_Element2{
+    background: var(--Grid_Green);
+    color: var(--Full_White);
+}
+.Target_2 .Activity_Grid_Element3{
+    background: var(--Grid_Dark_Blue);
+    color: var(--Full_White);
+}
+.Target_2 .Activity_Grid_Element4{
+    background: var( --Grid_Ligth_Blue);
+}
+.Target_2 .Activity_Grid_Element5{
+    background: var(--Grid_Orange);
+}
+.Target_2 .Activity_Grid_Element6{
+    background: var(--Grid_Purple);
+    color: var(--Full_White);
+}
+.Target_2 .Activity_Grid_Element7{
+    background: var(--Grid_Yellow);
+}
+.Target_2 .Activity_Grid_Element8{
+    background: var(--grid_Pink);
+    color: var(--Full_White)
+}
+
 /* Slider 4 */
 
 #Slider_4 #Config_Darkmode{

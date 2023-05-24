@@ -30,3 +30,7 @@
 .Body_DarkMode #Slider_4 .DarkmodeSelector{
     transform: translateX(0);
 }
+
+.Body_DarkMode header {
+    box-shadow: 0 0 15px 20px var(--Darkmode_Background);
+}

@@ -50,9 +50,10 @@ header {
     align-items: center;
     justify-items: center;
     grid-template-columns: repeat(11, 1fr);
+    box-shadow: 0 0 15px 20px var(--Full_White);
     position: sticky;
+    z-index: 1000;
     top: 20px;
-    z-index: 100;
 }
 
 header a {
@@ -191,7 +192,7 @@ picture .Picture_Sliders {
 /* Slider 3 */
 
 .Content{
-    width: 800px;
+    width: 700px;
     background-color: var(--Ligth_Gray);
     height: 100vh;
     /* outline: 2px #ededed; */
@@ -208,8 +209,9 @@ picture .Picture_Sliders {
     background-color: #19c919;
 }
 .Content_Header input{
-    width: 40%;
-    height: 60%;
+    width: 280px;
+    font-family: inherit;
+    font-size: 20px;
     border-radius: 10px;
     outline: none;
     border: none;
@@ -312,7 +314,7 @@ picture .Picture_Sliders {
     justify-content: center;
     align-items: center;
     gap: 12px;
-    width: 25%;
+    width: 150px;
     border-radius: 5px;
     font-size: large;
     color: var(--Full_White);
@@ -333,33 +335,33 @@ picture .Picture_Sliders {
 .Target_Icon i{
     transform: rotate(-45deg);
 }
+
 .Target_2{
     height: 70%;
-    background-color: #fff;
-    background-image: url('https://images.ctfassets.net/ipjoepkmtnha/687anB2sdEnlVt1ZgQdM8g/b51a3082dedf2f1afbf048f73b789b76/technogym-myrune-home-img.jpg');
-    background-size: cover;
-    background-position: top;
+    width: 100%;
+    padding: 20px 30px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
 }
+
+.Target_2 .Activity_Grid_Element {
+    font-size: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .Target_3{
     height: 12%;
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
+    margin-top: 20px;
+    align-self: center;
 }
-.Comment{
-    width: 30%;
-    /* overflow: hidden; */
-}
-.Comment textarea{
-    outline: none;
-    border: 1px solid transparent;
-    background-color: var(--Ligth_Gray);
-    outline: 1px solid black;
-    border-radius: 5px;
-    padding: 5px;
-    font-family: inherit;
-    color: darkslategrey;
-}
+
 /* Fin de Slider 3 */
 
 /* Slider 4 */
@@ -378,6 +380,12 @@ picture .Picture_Sliders {
     justify-content: space-between;
     font-size: 20px;
     margin: 20px;
+    
+}
+
+.Config_List li a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .fa-link {
@@ -395,6 +403,10 @@ picture .Picture_Sliders {
     padding: 10px 0 40px 0;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
+    overflow: hidden;
+    height: 0;
+    transform: scale(0);
+    transition: transform 0.5s;
 }
 
 .Form_Hero {
@@ -413,7 +425,7 @@ picture .Picture_Sliders {
     align-items: center;
 }
 
-.Form_InputContent input, .Form_Inputs input {
+.Form_InputContent input{
     font-size: 25px;
     font-family: inherit;
     border: none;
@@ -433,10 +445,16 @@ picture .Picture_Sliders {
     transform: rotate(-35deg);
 }
 
-#Input_Submit {
+.Input_Submit {
     text-align: center;
     padding: 10px 0;
     cursor: pointer;
+    font-size: 25px;
+    font-family: inherit;
+    border: none;
+    border-radius: 10px;
+    background: var(--Full_White);
+    outline: none;
 }
 
 .Form_Extras_LogIn {
@@ -480,4 +498,14 @@ picture .Picture_Sliders {
 
 .Extras_SingUp i:hover {
     box-shadow: 0 0 10px 5px var(--Shadow);
+}
+
+#LogIn_Form:target {
+    transform: scale(1);
+    height: auto;
+}
+
+#Resgister_Form:target {
+    transform: scale(1);
+    height: auto;
 }
