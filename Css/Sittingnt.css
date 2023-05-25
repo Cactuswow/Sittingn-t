@@ -505,7 +505,7 @@ picture .Picture_Sliders {
     height: auto;
 }
 
-#Resgister_Form:target {
+#Register_Form:target {
     transform: scale(1);
     height: auto;
 }

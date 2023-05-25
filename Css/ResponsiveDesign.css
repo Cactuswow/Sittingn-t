@@ -1,0 +1,46 @@
+@media (max-width: 1100px) {
+    
+    section {
+        gap: 30px;
+    }
+
+    section .Section_Content{
+        flex-direction: column;
+        text-align: center;
+        background-color: var(--Ligth_Gray);
+        padding: 30px 20px;
+        border-radius: 10px;
+        color: var(--Full_Black);
+    }
+
+    section .Section_Reverse {
+        flex-direction: column-reverse;
+    }
+
+    section .Section_End_Paragraph {
+        text-align: center;
+    }
+
+    .Body_DarkMode section .Section_Content{
+        background-color: var(--Dark_Gray);
+    }
+
+    .Section_Running_Activity {
+        margin: 20px 0;
+    }
+
+    section picture {
+        width: 500px;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 50px;
+        column-gap: 80px;
+    }
+
+    footer {
+        padding: 20px 0;
+        justify-content: center;
+        gap: 50px;
+    }
+
+}

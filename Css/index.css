@@ -131,7 +131,7 @@ section .Section_Grid {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(6, 1fr);
-    gap: .15em;
+    gap: .2em;
 }
 
 section .Grid_Element {
@@ -196,6 +196,7 @@ footer {
     color: var(--Full_White);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-radius: 20px;
     margin: 20px;
 }
