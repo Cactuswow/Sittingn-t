@@ -21,6 +21,10 @@
         text-align: center;
     }
 
+    section .Section_Health {
+        background: var(--Full_White);
+    }
+
     .Body_DarkMode section .Section_Content{
         background-color: var(--Dark_Gray);
     }

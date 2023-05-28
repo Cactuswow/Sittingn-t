@@ -100,6 +100,8 @@ picture .Picture_Sliders {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(5 , 1fr);
+    grid-auto-flow: row;
+    row-gap: 40px;
 }
 
 #Slider_1 #Slider1_Activity {
@@ -125,6 +127,10 @@ picture .Picture_Sliders {
     border: none;
     font-family: inherit;
     letter-spacing: 2px;
+    color: inherit;
+}
+
+#Slider1_CardInformation input::placeholder {
     color: inherit;
 }
 
