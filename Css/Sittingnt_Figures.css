@@ -85,6 +85,7 @@
     gap: 50px;
     position: relative;
     animation: Expand_Activity 0.8s;
+    user-select: none;
 }
 
 .ActivitySquare {

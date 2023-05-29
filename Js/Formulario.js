@@ -60,7 +60,6 @@ Form_SignUp.onsubmit = function(event) {
 
     RegRegister(ValueDataIn)
 
-    console.log(Data)
 }
 
 function RegRegister(ValueDataIn) {
@@ -86,7 +85,13 @@ function EvalueRregister(ValueDataIn) {
         if(
             Data[i].User == ValueDataIn.User
         ) {
-            console.log("NO")
+            Swal.fire({
+                position: 'top',
+                icon: 'error',
+                title: 'Usuario ya existente ' + Data[i].User,
+                showConfirmButton: false,
+                timer: 2000
+            })
         }
         else {
 
@@ -95,6 +100,7 @@ function EvalueRregister(ValueDataIn) {
                 "Password" : ValueDataIn.Password,
                 "Email" : ValueDataIn.Email
             });
+            console.log("A")
             Form_SignUp.reset()
 
         }
@@ -107,6 +113,15 @@ function EvalueRregister(ValueDataIn) {
             "Password" : ValueDataIn.Password,
             "Email" : ValueDataIn.Email
         });
+
+        Swal.fire({
+            position: 'top',
+            icon: 'success',
+            title: 'Registrado ',
+            showConfirmButton: false,
+            timer: 2000
+        })
+
         Form_SignUp.reset()
 
     }
